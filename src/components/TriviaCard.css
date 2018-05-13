@@ -1,0 +1,22 @@
+.trivia-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.trivia-question {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.trivia-answer {
+    border: 1px solid grey;
+    border-radius: 30px;
+    font-size: large;
+    height: 35px;
+    width: 250px;
+}
