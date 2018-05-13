@@ -7,7 +7,9 @@
     ]
   },
   "rules": {
+    "interface-name": [true, "never-prefix"],
     "object-literal-sort-keys": false,
-    "member-access": false
+    "member-access": false,
+    "variable-name": [true, "ban-keywords"]
   }
 }
