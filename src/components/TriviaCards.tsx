@@ -1,4 +1,4 @@
-import {Button} from '@blueprintjs/core';
+import {Button, ProgressBar} from '@blueprintjs/core';
 import * as React from 'react';
 import { TriviaQuestion } from '../models/TriviaQuestion';
 import TriviaCard from './TriviaCard';
@@ -18,7 +18,9 @@ class TriviaCards extends React.Component<TriviaCardsProps, {currentQuestion: nu
     }
     public render() {
         return(
-            <div>
+            <div className="trivia">
+                <p> Question {this.state.currentQuestion + 1} of {this.props.trivia.length} </p>
+                <ProgressBar animate={false} stripes={false} value={(this.state.currentQuestion + 1)/this.props.trivia.length}/>
                 <TriviaCard question={this.props.trivia[this.state.currentQuestion]}/>
                 <Button text="Next" onClick={this.nextQuestion}/>
             </div>            

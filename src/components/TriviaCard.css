@@ -1,9 +1,12 @@
+.trivia {
+    display: inline-block;
+}
+
 .trivia-card {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    margin-bottom: 20px;
     width: 500px;
 }
 
@@ -27,4 +30,10 @@
 
 .wrong-answer {
     background-color: red;
+}
+
+.pt-progress-bar {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 200px;
 }
